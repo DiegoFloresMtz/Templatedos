@@ -4,9 +4,7 @@ import {
   Container,
   Row,
   Col,
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -36,7 +34,7 @@ export default class Navb extends Component {
     const {isOpen} = this.state
     return (
       <>
-      <Navbar className="nav_bar bg-transparent" fixed="top" expand={true} light>
+      <Navbar className="nav_bar bg-transparent " fixed="top"  light>
         <NavbarBrand tag={Link} to="/">
           <img src={logo} className="img-fluid logo" alt=""/>
         </NavbarBrand>
@@ -44,12 +42,12 @@ export default class Navb extends Component {
           <Nav className="ml-auto" navbar>
             <NavItem className="pt-1">
                 <NavLink className="menus" onClick={this.toggle}>
-                  MENU
+                  {isOpen?"CERRAR":"MENU"}
                 </NavLink>
               </NavItem>
           </Nav>
       </Navbar>
-      <SlideMenu toggle={this.toggle} isOpen={this.state.isOpen} />
+      <SlideMenu toggle={this.toggle} isOpen={isOpen} />
       </>
 
     );
@@ -58,22 +56,48 @@ export default class Navb extends Component {
 
 function SlideMenu({isOpen,toggle}){
   return(
-    <Container fluid className={`slideout ${isOpen&&' slidein'} d-flex flex-column justify-content-around align-items-start`} >
-      <Nav>
-      <NavLink>
-  <hr className="line" width="25%" align="left"/>
-        <ul className="menuinicio">
-        INICIO<br/>
-  <a className="menutext" href="">¿Qué hacemos?</a> <br/>
-  <a className="menutext" href="">Como funciona</a> <br/>
-  <a className="menutext" href="">Casos de éxito</a> <br/>
-  <a className="menutext" href="">Precios</a> <br/>
+    <Container fluid className={`menu_layout ${isOpen?'slidein':'slideout'} d-flex flex-column justify-content-around align-items-start`} >
+      <Container>
+        <Row>
+          <Col xs={1}>
+            <hr className="line hr_pink" align=""/>
+          </Col>
+          <Col xs={11}>
+              <Nav vertical>
+                <h3 className="menuinicio">Inicio</h3>
+                <br/>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#quehacemos">¿Qué hacemos?</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#comofunciona">Como funciona</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#casosexito">Casos de éxito</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink onClick={toggle} className="menutext" href="#precios">Precios</NavLink>
+                </NavItem>
+              </Nav>
+              <br/>
+              <hr className="line hr_pink" width="13%" align="left"/>
+              <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Nutri.and.love/">
+                  <FontAwesomeIcon className="text-white" size="2x" icon={['fab','facebook']}/>
+                </a>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/nutri.and.love/?hl=es-la">
+                  <FontAwesomeIcon className="text-white" size="2x" icon={['fab','instagram']}/>
+                </a>
 
-</ul>
-  <hr className="line" width="25%" align="left"/>
-      </NavLink>
+              </div>
+          </Col>
+        </Row>
+      </Container>
 
-      </Nav>
 
     </Container>
   )
