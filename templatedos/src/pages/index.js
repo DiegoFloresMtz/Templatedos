@@ -1,13 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import
+{
+  Layout,
+  SEO,
+  }
+from "../components"
+import {
+  Sect1,
+  Sect2} from "../sections"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Sect1/>
+    <Sect2/>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
