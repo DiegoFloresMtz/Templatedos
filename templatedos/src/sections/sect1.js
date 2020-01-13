@@ -14,7 +14,7 @@ const Sect1 =() => (
       Pee on walls
      </h1><br/>
      <h4 className="subs">
-     it smells like breakfast poop on grasses scratch the box
+     It smells like breakfast poop on grasses scratch the box
      </h4>
 
      <Button outline color="light" className="font-weight-bold btnstyle"  href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Regístrate Ahora!</Button>{' '}
