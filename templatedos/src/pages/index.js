@@ -9,13 +9,15 @@ import
 from "../components"
 import {
   Sect1,
-  Sect2} from "../sections"
+  Sect2,
+  Sect3} from "../sections"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Template" />
     <Sect1/>
     <Sect2/>
+    <Sect3/>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )

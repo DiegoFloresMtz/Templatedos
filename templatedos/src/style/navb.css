@@ -87,11 +87,12 @@ color: rgb(250, 91, 159);
 @keyframes circleOut {
   0%{
     clip-path: circle(150% at 90% 2.5%);
-    background-color:#FA5B9F;
+    background-color:#12FF18;
   }
+  /*when closing*/
   99%{
     clip-path: circle(0% at 96% 7%);
-    background-color:#633FFC;
+    background-color: black;
   }
   100%{
     z-index:0
@@ -103,7 +104,8 @@ color: rgb(250, 91, 159);
   }
   100%{
     clip-path: circle(150% at 90% 2.5%);
-    background-color:#FA5B9F;
+    /*color at full*/
+    background-color:#12FF18;
     z-index: 1021;
   }
 }
