@@ -10,7 +10,6 @@
     left:60%;
     width: 550px;
     height: 300px;
-    margin: 0 0 0 0;
     top: 0;
     transition-property: translateX();
     transition-duration: 2s;
