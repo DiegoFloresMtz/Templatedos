@@ -1,0 +1,1 @@
+import {dParallaxData} from "./parallaxdata";

@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Col, Row, Button} from 'reactstrap';
-import img_1 from "../images/img/hands.png";
+import img_1 from "../images/img/plane.png";
 import img_2 from "../images/img/salad.png";
 import "../style/sect1.css"
 
