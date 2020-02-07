@@ -7,7 +7,11 @@
 
 .imgai{
     position: relative;
-    left:50%
+
+}
+
+.posit{
+  margin-right: -100px;
 }
 
 .textform{
