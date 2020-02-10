@@ -10,8 +10,8 @@ const dParallaxData = [
     duration: '500px',
     properties: [
       {
-        startValue: 0,
-        endValue: .5,
+        startValue: 1,
+        endValue: .3,
         property: "opacity"
       },
       // Blur is not performant
@@ -28,7 +28,7 @@ const dParallaxData = [
       },
       {
         startValue:0,
-        endValue:.5,
+        endValue:2,
         property:"scaleX"
       }
 
