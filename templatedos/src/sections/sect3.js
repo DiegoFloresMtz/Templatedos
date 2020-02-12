@@ -31,13 +31,11 @@ const dParallaxData = [
         endValue:2,
         property:"scaleX"
       }
-
     ]
   }
 ]
 
 export default class Sect3 extends Component{
-
   render(){
     return(
       <div className="bodie">

@@ -1,13 +1,57 @@
 import React from "react";
 import {Container, Col, Row, Button, Card, CardText, CardBody,
   CardTitle, CardSubtitle, CardDeck} from 'reactstrap';
-import dots from "../images/img/dots.png"
-import '../style/sect2.css'
+import dots from "../images/img/dots.png";
+import '../style/sect2.css';
+import Plx from "react-plx";
 
+const ParallaxDataf=[
+  {
+    start:"100px",
+    duration:"700px",
+    properties:[
+      {
+        startOffset:0,
+        endOffset:100,
+        easing:(0.175, 0.885, 0.32, 1.275),
+      },
+      {
+        startValue:0,
+        endValue:1,
+      property:"opacity"
+    },
+    {
+      startValue:200,
+      endValue:0,
+    property:"translateY"
+  },
+]
+},
+  {
+    start:"1000px",
+    duration:"600px",
+    properties:[
+      {
+          startValue: 1,
+          endValue:0,
+          property:"opacity"
+      },
+      {
+        startValue:.9,
+        endValue:0,
+        property:""
+      },
+      {startValue:0,
+      endValue:-600,
+    property:"translateX"}
+      ]
+  }
+]
 
 
 export default ()=>
   <Container>
+  <Plx parallaxData={ParallaxDataf}>
     <Container>
       <Row>
         <Col className="mt-5 titlee">
@@ -82,4 +126,5 @@ Cat ipsum dolor sit amet, cats are the world and what the heck just happened, so
 </Col>
       </Row>
     </Container><br/><br/>
+    </Plx>
   </Container>

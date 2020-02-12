@@ -2,10 +2,40 @@ import React from "react";
 import {Container, Col, Row, Button} from 'reactstrap';
 import img_1 from "../images/img/plane.png";
 import img_2 from "../images/img/salad.png";
-import "../style/sect1.css"
+import "../style/sect1.css";
+import Plx from "react-plx";
+
+const ParallaxDataI=[
+  {
+    start:"200px",
+    duration:"400px",
+    properties:[
+      {
+        startOffset:50,
+        endOffset:200,
+        easing:"easeInOutBack",
+      },
+      {
+          startValue: 1,
+          endValue:0,
+          property:"opacity"
+      },
+      {
+        startValue:1,
+        endValue:.2,
+        property:"scale"
+      },
+      {startValue:0,
+      endValue:-100,
+    property:"translateY"}
+      ]
+  }
+]
+
 
 const Sect1 =() => (
 <div className="fulle">
+  <Plx parallaxData={ParallaxDataI}>
   <Container >
     <Row >
       <Col sm={6} xs={12}>
@@ -30,6 +60,7 @@ const Sect1 =() => (
     </Row>
 
   </Container>
+  </Plx>
 </div>
 )
 

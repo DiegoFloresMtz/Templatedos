@@ -1,6 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
-
+import React from "react";
+import { Link } from "gatsby";
 import
 {
   Layout,
@@ -12,11 +11,12 @@ import {
   Sect2,
   Sect3} from "../sections"
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Template" />
-    <Sect1/>
-    <Sect2/>
+    <Sect1 />
+    <Sect2 alt=""/>
     <Sect3/>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
