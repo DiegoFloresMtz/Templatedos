@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Template Default Server`,
-    description: `Template deviated of all design.`,
+    title: `Template`,
+    description: `Template`,
     author: `@mgpn`,
   },
   plugins: [

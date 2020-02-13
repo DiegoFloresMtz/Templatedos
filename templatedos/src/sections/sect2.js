@@ -7,12 +7,12 @@ import Plx from "react-plx";
 
 const ParallaxDataf=[
   {
-    start:"100px",
+    start:"self",
     duration:"700px",
     properties:[
       {
         startOffset:0,
-        endOffset:100,
+        endOffset:20,
         easing:(0.175, 0.885, 0.32, 1.275),
       },
       {
