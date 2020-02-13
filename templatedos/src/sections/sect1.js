@@ -4,6 +4,7 @@ import img_1 from "../images/img/plane.png";
 import img_2 from "../images/img/salad.png";
 import "../style/sect1.css";
 import Plx from "react-plx";
+import { bounce } from 'react-animations';
 
 const ParallaxDataI=[
   {
