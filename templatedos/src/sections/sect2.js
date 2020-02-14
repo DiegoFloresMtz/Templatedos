@@ -23,7 +23,7 @@ export default class Sect3 extends Component{
         alt="" />
     </Col>
 
-    <Col className="textformR ">
+    <Col className="textformR">
       <h2>
         Titulo
       </h2>
