@@ -61,6 +61,8 @@ const Sect1 =() => (
   </Container>
   </Plx>
     </ScrollAnimation>
+    <br/>
+    <br/>    <br/>
 </div>
 )
 

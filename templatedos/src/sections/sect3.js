@@ -25,6 +25,30 @@ const ParallaxDataf=[
 }
 ]
 
+const ParallaxDataE=[
+  {
+    start:"self",
+    duration:"500px",
+    properties:[
+      {
+        startValue:0,
+        endValue:1,
+      property:"opacity"
+    },
+    {
+      startValue:0,
+      endValue:0,
+    property:"blur"
+  },
+  {
+    startValue:1,
+    endValue:1.2,
+    property:"scaleZ"
+  }
+]
+}
+]
+
 
 export default ()=>
   <Container>
@@ -52,8 +76,9 @@ export default ()=>
           <div>
 
           <ScrollAnimation animateIn="flipInX"
-            animateOut="flipOutX">
-          <CardDeck>
+            animateOut="bounceOutUp">
+            <Plx parallaxData={ParallaxDataE}>
+              <CardDeck>
                 <Card className="card-body" sm={4} xs={12}>
                   <CardBody>
                     <CardTitle>Loren Ipsum</CardTitle>
@@ -100,6 +125,7 @@ Cat ipsum dolor sit amet, cats are the world and what the heck just happened, so
                   </CardBody>
                 </Card>
               </CardDeck>
+            </Plx>
 </ScrollAnimation>
           </div>
   <img src={dots} className="imgT" alt="" />
