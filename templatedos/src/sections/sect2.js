@@ -1,130 +1,115 @@
-import React from "react";
-import {Container, Col, Row, Button, Card, CardText, CardBody,
-  CardTitle, CardSubtitle, CardDeck} from 'reactstrap';
-import dots from "../images/img/dots.png";
+import React, {Component} from 'react';
+import {Container, Col,Row,Jumbotron} from 'reactstrap';
+import imga1 from "../images/bizz.jpg";
+import imga2 from "../images/column.jpg";
+import imga3 from "../images/moni.jpg";
+import imga4 from "../images/img/pattern.jpg";
 import '../style/sect2.css';
-import Plx from "react-plx";
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const ParallaxDataf=[
-  {
-    start:"100px",
-    duration:"700px",
-    properties:[
-      {
-        startOffset:0,
-        endOffset:100,
-        easing:(0.175, 0.885, 0.32, 1.275),
-      },
-      {
-        startValue:0,
-        endValue:1,
-      property:"opacity"
-    },
-    {
-      startValue:200,
-      endValue:0,
-    property:"translateY"
-  },
-]
-},
-  {
-    start:"1000px",
-    duration:"600px",
-    properties:[
-      {
-          startValue: 1,
-          endValue:0,
-          property:"opacity"
-      },
-      {
-        startValue:.9,
-        endValue:0,
-        property:""
-      },
-      {startValue:0,
-      endValue:-600,
-    property:"translateX"}
-      ]
-  }
-]
+export default class Sect3 extends Component{
+  render(){
+    return(
+      <Col className="bodie">
+        <ScrollAnimation animateIn="fadeInRightBig"
+          animateOut="fadeOutRightBig">
+        <Jumbotron className="shadow-lg bg-transparent rounded">
+<Container>
+  <Col>
+    <Row>
+    <Col className="">
+      <img src={imga1}
+      className="imgaiR shadow-lg bg-black rounded"
+        alt="" />
+    </Col>
 
+    <Col className="textformR ">
+      <h2>
+        Titulo
+      </h2>
+        Cat ipsum dolor sit amet
+        purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box. Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire. Sit in box jump off balcony, onto stranger's head
 
-export default ()=>
-  <Container>
-  <Plx parallaxData={ParallaxDataf}>
-    <Container>
-      <Row>
-        <Col className="mt-5 titlee">
-          <h1 className="font-weight-bold">
-            Push your water glass on the floor
-          </h1>
         </Col>
-      </Row>
+    </Row>
+  </Col>
+</Container>
+</Jumbotron><br/>
+</ScrollAnimation>
 
-      <Row>
-        <Col className="sub">
-          <p>
-            There's a forty year old lady there let us feast mouse
-          </p>
+<ScrollAnimation animateIn="fadeInLeftBig"
+  animateOut="fadeOutLeftBig">
+<Jumbotron className="shadow-lg bg-transparent rounded">
+<Container>
+  <Col>
+    <Row>
+    <Col className="posit">
+      <img src={imga2}
+      className="imgaiL shadow-lg bg-black rounded"
+        alt="" />
+
+    </Col>
+
+    <Col className="textformL">
+      <h2>
+        Titulo
+      </h2>
+          Cat ipsum dolor sit amet, purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box. Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire.
         </Col>
-      </Row>
-<br/><br/><br/>
+    </Row>
+  </Col>
+</Container>
+</Jumbotron>
+</ScrollAnimation>
 
-      <Row>
-        <Col >
-          <div>
-          <CardDeck>
-                <Card className="card-body">
-                  <CardBody>
-                    <CardTitle>Loren Ipsum</CardTitle>
-                      <hr className="lines" width="80%" align="center"/>
-                    <CardSubtitle>Cat ipsum dolor sit amet, cats are the world and what the heck just happened, something feels fishy so munch on tasty moths claw drapes. The door is opening! how exciting oh, it's you, meh<br/><br/>
-</CardSubtitle>
-                    <CardText className="font-weight-bold">$999 mxn
+<ScrollAnimation animateIn="fadeInRightBig"
+  animateOut="fadeOutRightBig">
+<Jumbotron className="shadow-lg bg-transparent rounded">
+<Container>
+  <Col>
+    <Row>
+    <Col className="posit" >
+      <img src={imga3}
+      className="imgaiR ml-5 shadow-lg bg-black rounded"
+        alt="" />
 
-                    </CardText>
-                    <CardText>
-                        Mensual
-                    </CardText>
-                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
-                  </CardBody>
-                </Card>
+    </Col>
+    <Col className="textformR">
+      <h2>
+        Titulo
+      </h2>
+          Cat ipsum dolor sit amet, purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box. Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire.
+        </Col>
+    </Row>
+  </Col>
+</Container>
+</Jumbotron>
+</ScrollAnimation>
 
-                <Card className="card-body">
-                  <CardBody >
-                    <CardTitle>Loren Ipsum</CardTitle>
-                      <hr className="lines" width="80%" align="center"/>
-                    <CardSubtitle>
-Cat ipsum dolor sit amet, cats are the world and what the heck just happened, something feels fishy so munch on tasty moths claw drapes. The door is opening! how exciting oh, it's you, meh<br/><br/>
-</CardSubtitle>
-                    <CardText className="font-weight-bold">$1,499 mxn</CardText>
-                    <CardText>
-                        Mensual
-                    </CardText><br/>
-                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
-                  </CardBody>
-                </Card>
+<ScrollAnimation animateIn="fadeInLeftBig"
+  animateOut="fadeOutLeftBig">
+<Jumbotron className="shadow-lg bg-transparent rounded">
+<Container>
+  <Col>
+    <Row>
+    <Col className="posit">
+      <img src={imga4}
+      className="imgaiL shadow-lg bg-black rounded"
+        alt="" />
 
-                <Card className="card-body">
-                  <CardBody >
-                    <CardTitle>Loren ipsum</CardTitle>
-                      <hr className="lines" width="80%" align="center"/>
-                    <CardSubtitle>
-Cat ipsum dolor sit amet, cats are the world and what the heck just happened, something feels fishy so munch on tasty moths claw drapes. The door is opening! how exciting oh, it's you, meh<br/><br/>
-</CardSubtitle>
-                    <CardText className="font-weight-bold">$1,699 mxn </CardText>
-                    <CardText>
-                        Mensual
-                    </CardText><br/>
-                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
-                  </CardBody>
-                </Card>
-              </CardDeck>
-          </div>
-  <img src={dots} className="imgT" alt="" />
-<img src={dots} className="imgL" alt="" />
+    </Col>
+    <Col className="textformL">
+      <h2>
+        Titulo
+      </h2>
+          Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire. Sit in box jump off balcony, onto stranger's head so throw down all the stuff in the kitchen poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls cough hairball on conveniently placed pants climb a tree
+        </Col>
+    </Row>
+  </Col>
+</Container>
+</Jumbotron>
+</ScrollAnimation>
 </Col>
-      </Row>
-    </Container><br/><br/>
-    </Plx>
-  </Container>
+    );
+  }
+}

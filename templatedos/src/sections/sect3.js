@@ -1,64 +1,111 @@
-import React, {Component} from 'react';
-import {Container, Col,Row} from 'reactstrap';
-import imga1 from "../images/img/pattern.jpg";
+import React from "react";
+import {Container, Col, Row, Button, Card, CardText, CardBody,
+  CardTitle, CardSubtitle, CardDeck} from 'reactstrap';
+import dots from "../images/img/dots.png";
 import '../style/sect3.css';
 import Plx from "react-plx";
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const dParallaxData = [
+const ParallaxDataf=[
   {
-    start: "self",
-    duration: '500px',
-    properties: [
-      {
-        startValue: 1,
-        endValue: .3,
-        property: "opacity"
-      },
-      // Blur is not performant
-      // Used just as an example for CSS filters
-      {
-        startValue: 0,
-        endValue: 2,
-        property: "blur"
-      },
+    start:"self",
+    duration:"500px",
+    properties:[
       {
         startValue:0,
-        endValue:-200,
-        property:"translateX"
-      },
-      {
-        startValue:0,
-        endValue:2,
-        property:"scaleX"
-      }
-    ]
-  }
+        endValue:1,
+      property:"opacity"
+    },
+    {
+      startValue:400,
+      endValue:0,
+    property:"translateY"
+  },
+]
+}
 ]
 
-export default class Sect3 extends Component{
-  render(){
-    return(
-      <div className="bodie">
-<Container>
-  <Col>
-    <Row>
 
-    <div className="posit">
-      <Plx parallaxData={dParallaxData}>
-      <img src={imga1}
-      className="imgai"
-        alt="" />
-      </Plx>
-    </div>
+export default ()=>
+  <Container>
+  <Plx parallaxData={ParallaxDataf}>
+    <Container>
+      <Row>
+        <Col className="mt-5 titlee">
+          <h1 className="font-weight-bold">
+            Push your water glass on the floor
+          </h1>
+        </Col>
+      </Row>
 
-    <div className="textform">
-          Cat ipsum dolor sit amet, purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box. Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire. Sit in box jump off balcony, onto stranger's head so throw down all the stuff in the kitchen poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls cough hairball on conveniently placed pants climb a tree
+      <Row>
+        <Col className="sub">
+          <p>
+            There's a forty year old lady there let us feast mouse
+          </p>
+        </Col>
+      </Row>
+<br/><br/><br/>
+
+      <Row>
+        <Col >
+          <div>
+
+          <ScrollAnimation animateIn="flipInX"
+            animateOut="flipOutX">
+          <CardDeck>
+                <Card className="card-body" sm={4} xs={12}>
+                  <CardBody>
+                    <CardTitle>Loren Ipsum</CardTitle>
+                      <hr className="lines" width="80%" align="center"/>
+                    <CardSubtitle>Cat ipsum dolor sit amet, cats are the world and what the heck just happened, something feels fishy so munch on tasty moths claw drapes. The door is opening! how exciting oh, it's you, meh<br/><br/>
+</CardSubtitle>
+                    <CardText className="font-weight-bold">$999 mxn
+
+                    </CardText>
+                    <CardText>
+                        Mensual
+                    </CardText>
+                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
+                  </CardBody>
+                </Card>
+
+                <Card className="card-body" sm={4} xs={12}>
+                  <CardBody >
+                    <CardTitle>Loren Ipsum</CardTitle>
+                      <hr className="lines" width="80%" align="center"/>
+                    <CardSubtitle>
+Cat ipsum dolor sit amet, cats are the world and what the heck just happened, something feels fishy so munch on tasty moths claw drapes. The door is opening! how exciting oh, it's you, meh<br/><br/>
+</CardSubtitle>
+                    <CardText className="font-weight-bold">$1,499 mxn</CardText>
+                    <CardText>
+                        Mensual
+                    </CardText><br/>
+                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
+                  </CardBody>
+                </Card>
+
+                <Card className="card-body" sm={4} xs={12}>
+                  <CardBody >
+                    <CardTitle>Loren ipsum</CardTitle>
+                      <hr className="lines" width="80%" align="center"/>
+                    <CardSubtitle>
+Cat ipsum dolor sit amet, cats are the world and what the heck just happened, something feels fishy so munch on tasty moths claw drapes. The door is opening! how exciting oh, it's you, meh<br/><br/>
+</CardSubtitle>
+                    <CardText className="font-weight-bold">$1,699 mxn </CardText>
+                    <CardText>
+                        Mensual
+                    </CardText><br/>
+                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
+                  </CardBody>
+                </Card>
+              </CardDeck>
+</ScrollAnimation>
           </div>
-
-    </Row>
-  </Col>
-</Container>
-</div>
-    );
-  }
-}
+  <img src={dots} className="imgT" alt="" />
+<img src={dots} className="imgL" alt="" />
+</Col>
+      </Row>
+    </Container><br/><br/>
+    </Plx>
+  </Container>

@@ -2,7 +2,7 @@
   width:4vw;
 }
 .hr_pink{
-  border-top: 2px solid #4B2157;
+  border-top: 2px solid green;
 
 }
 .menus{
@@ -13,7 +13,7 @@
 
 }
 .navbar-light .navbar-nav .nav-link {
-    color: rgb(250, 91, 159);
+    color: red;
 }
 
 
@@ -31,12 +31,12 @@ color: rgb(250, 91, 159);
 .menuinicio{
   font-size: 4.5vw;
   font-weight: bold;
-  color: #4B2157;
+  color: blue;
   /* margin-left: 10rem; */
 
 }
 .menutext.nav-link{
-  color: #532CFB;
+  color: blue;
   padding: .5rem 0rem;
 
 }
@@ -87,12 +87,12 @@ color: rgb(250, 91, 159);
 @keyframes circleOut {
   0%{
     clip-path: circle(150% at 90% 2.5%);
-    background-color:#12FF18;
+    background-color:blue;
   }
   /*when closing*/
   99%{
     clip-path: circle(0% at 96% 7%);
-    background-color: black;
+    background-color:#12B0FA ;
   }
   100%{
     z-index:0
@@ -105,7 +105,7 @@ color: rgb(250, 91, 159);
   100%{
     clip-path: circle(150% at 90% 2.5%);
     /*color at full*/
-    background-color:#12FF18;
+    background-color:magenta;
     z-index: 1021;
   }
 }

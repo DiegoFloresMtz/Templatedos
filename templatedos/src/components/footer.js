@@ -5,10 +5,14 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 import logo from '../images/logo/logo.svg';
 import '../style/footer.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Footer=(props)=>{
  return (
+   <ScrollAnimation animateIn="bounceInUp"
+     animateOut="bounceOutDown">
    <Container tag="footer" fluid className="footer p-5 text-left text-light animated fadeInPlace">
+
      <Container>
        <Row className="mb-5">
          <Col>
@@ -79,7 +83,9 @@ const Footer=(props)=>{
          </Col>
        </Row>
      </Container>
+
    </Container>
+    </ScrollAnimation>
  )
 }
 

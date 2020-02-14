@@ -1,153 +1,40 @@
-.titlee {
-text-align: center;
-color:#532CFB;
-}
-
-.sub{
-text-align: center;
-color: #532CFB;
-
-}
-.card{
-  box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.75);;
-}
-
-.card-body{
-border-color: #532CFB;
-border-radius: 5%;
-}
-.card-text{
-text-align: center;
-color: #FA5B9F;
-margin-bottom: 0rem;
-padding: 2px, 2px;
-}
-
-.card-title{
-text-align: center;
-color: #532CFB;
-font-size: 25px;
-font-weight: bolder;
-}
-.card-subtitle{
-text-align: center;
-color: #4B2157;
-}
-
-.butn{
-  display: block;
-  margin: auto;
-  border-radius: 25px;
-  margin-top: 2rem;
-  padding: 10px 40px;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: #532CFB;
-
-}
-.imgT{
-margin-top: -63rem;
-margin-left: 20rem;
-}
-
-.imgL{
-margin-top: -20rem;
-margin-left:-5rem;
-}
-
-.lines{
-  border: 2px solid #532CFB;
-
-}
-
-
-@media (max-width:1097px) and (min-width:992px){
-  .imgT{
-  margin-top: -63rem;
-  margin-left: 3rem;
-  }
-
-  .card-body{
-    border-radius: 2%;
-  }
-
-  .butn{
-    display: block;
-    margin: auto;
-    border-radius: 25px;
-    margin-top: 2rem;
-    padding: 10px 40px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #532CFB;
-  }
-}
-
-@media (max-width:991px) and (min-width:768px){
-  .card-body{
-  border-color: #532CFB;
-  border-radius:1%;
-  padding: 1rem .5rem;
-  }
-
-  .btn{
-    padding: 1rem 1rem;
-    margin-bottom: 0rem;
-  }
-  .imgT{
-display: none;
-  }
-  .imgL{
-  display: none;
-  }
-
-}
-
-@media (max-width:767px) and (min-width:426px){
-  .imgT{
-display: none;
-  }
-  .imgL{
-  display: none;
-  }
-  .card-body{
-  border-color: #532CFB;
-  border-radius: 1%;
+/** {*/
+    /*box-sizing: border-box;*/
+/*}*/
+.bodie{
+  background-color: white;
   margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0;
-  }
+}
 
-  }
+.imgaiL{
+    position:relative;
+    width: 50%;
+    right: 2%;
+}
 
+.imgaiR{
+    position: relative;
+    width: 50%;
+    left:50%;
 
+}
+.posit{
+  margin-right: -100px;
+}
 
-
-
-@media (max-width:425px) and (min-width:320px){
-  .imgT{
-display: none;
-  }
-
-  .imgL{
-  display: none;
-  }
-
-  .card-body{
-  border-color: #532CFB;
-  border-radius: 1%;
+.textformR{
   margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0;
-  }
-  .card-subtitle{
-  text-align: center;
-  color: #4B2157;
-  padding: 0rem;
-  }
-  .btn{
+  position: absolute;
+  font-size: 1rem;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.textformL{
+  margin-top: 1rem;
+  left:50%;
+  position: absolute;
+  font-size: 1rem;
+  width: 50%;
     margin-bottom: 1rem;
-  }
 }

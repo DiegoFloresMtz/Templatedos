@@ -67,16 +67,16 @@ function SlideMenu({isOpen,toggle}){
                 <h3 className="menuinicio">Inicio</h3>
                 <br/>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#quehacemos">¿Qué hacemos?</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#quehacemos">Quienes somos</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#comofunciona">Como funciona</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#comofunciona">Como lo hago mejor</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#casosexito">Casos de éxito</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#casosexito">Paquetes o clientes felices</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink onClick={toggle} className="menutext" href="#precios">Precios</NavLink>
+                  <NavLink onClick={toggle} className="menutext" href="#precios">Galeria</NavLink>
                 </NavItem>
               </Nav>
               <br/>

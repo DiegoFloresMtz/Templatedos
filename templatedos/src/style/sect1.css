@@ -1,10 +1,10 @@
 .fulle{
-  background-color: #D900FF;
+  background-color: blue;
 }
 .titulo{
   position: relative;
   z-index:0;
-  color: #81B347;
+  color: purple;
   font-size: 5rem;
   width: 100%;
   margin-top:10rem;
