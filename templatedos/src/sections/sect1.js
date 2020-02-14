@@ -4,18 +4,14 @@ import img_1 from "../images/img/plane.png";
 import img_2 from "../images/img/salad.png";
 import "../style/sect1.css";
 import Plx from "react-plx";
-import { bounce } from 'react-animations';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const ParallaxDataI=[
   {
     start:"200px",
-    duration:"400px",
+    duration:"600px",
     properties:[
-      {
-        startOffset:50,
-        endOffset:200,
-        easing:"easeInOutBack",
-      },
       {
           startValue: 1,
           endValue:0,
@@ -23,7 +19,7 @@ const ParallaxDataI=[
       },
       {
         startValue:1,
-        endValue:.2,
+        endValue:0,
         property:"scale"
       },
       {startValue:0,
@@ -36,6 +32,8 @@ const ParallaxDataI=[
 
 const Sect1 =() => (
 <div className="fulle">
+  <ScrollAnimation animateIn="bounceIn"
+    animateOut="bounceOut">
   <Plx parallaxData={ParallaxDataI}>
   <Container >
     <Row >
@@ -62,6 +60,7 @@ const Sect1 =() => (
 
   </Container>
   </Plx>
+    </ScrollAnimation>
 </div>
 )
 
