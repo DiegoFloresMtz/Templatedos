@@ -91,7 +91,7 @@ export default ()=>
                     <CardText>
                         Mensual
                     </CardText>
-                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
+                    <Button className="butn"   href="">¡Lo quiero!</Button>
                   </CardBody>
                 </Card>
 
@@ -106,7 +106,7 @@ Cat ipsum dolor sit amet, cats are the world and what the heck just happened, so
                     <CardText>
                         Mensual
                     </CardText><br/>
-                    <Button className="butn"   href="https://api.whatsapp.com/send?phone=522471279045&text=Hola,%20quiero%20agendar%20una%20consulta%20en%20NutriAndLove%20con%20la%20Doctora%20Blanca%20Vargas">¡Lo quiero!</Button>
+                    <Button className="butn"   href="">¡Lo quiero!</Button>
                   </CardBody>
                 </Card>
 

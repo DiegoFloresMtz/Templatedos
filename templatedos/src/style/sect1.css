@@ -1,5 +1,5 @@
 .fulle{
-  background-color: blue;
+  background-color: #5637ab;
 }
 .titulo{
   position: relative;
@@ -48,6 +48,8 @@ margin-left:5rem;
   background-color: white;
   color:#C4FF80;
 }
+
+
 
 @media (max-width:1199px) and (min-width:992px){
   .titulo{

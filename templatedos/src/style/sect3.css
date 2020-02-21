@@ -60,6 +60,7 @@ margin-left:-5rem;
 
 }
 
+@media
 
 @media (max-width:1097px) and (min-width:992px){
   .imgT{
@@ -103,6 +104,8 @@ display: none;
 
 }
 
+
+
 @media (max-width:767px) and (min-width:426px){
   .imgT{
 display: none;
@@ -110,12 +113,18 @@ display: none;
   .imgL{
   display: none;
   }
+
+  .card{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .card-body{
   border-color: #532CFB;
   border-radius: 1%;
   margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 1rem;
   padding: 0;
   }
 
