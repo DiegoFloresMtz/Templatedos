@@ -40,7 +40,7 @@ const Sect1 =() => (
       <Col sm={6} xs={12}>
 
      <h1 className="titulo">
-      Pee on walls
+      Pee on walls(El nombre de tu marca)
      </h1><br/>
      <h4 className="subs">
      It smells like breakfast poop on grasses scratch the box

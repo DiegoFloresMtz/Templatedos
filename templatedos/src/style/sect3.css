@@ -19,7 +19,7 @@ border-radius: 5%;
 .card-text{
 text-align: center;
 color: #FA5B9F;
-margin-bottom: 0rem;
+margin-bottom: 0vw;
 padding: 2px, 2px;
 }
 
@@ -38,7 +38,7 @@ color: #4B2157;
   display: block;
   margin: auto;
   border-radius: 25px;
-  margin-top: 2rem;
+  margin-top: 2vw;
   padding: 10px 40px;
   font-size: 15px;
   font-weight: bold;
@@ -46,13 +46,13 @@ color: #4B2157;
 
 }
 .imgT{
-margin-top: -63rem;
-margin-left: 20rem;
+margin-top: -63vw;
+margin-left: 20vw;
 }
 
 .imgL{
-margin-top: -20rem;
-margin-left:-5rem;
+margin-top: -20vw;
+margin-left:-5vw;
 }
 
 .lines{
@@ -60,12 +60,12 @@ margin-left:-5rem;
 
 }
 
-@media
+
 
 @media (max-width:1097px) and (min-width:992px){
   .imgT{
-  margin-top: -63rem;
-  margin-left: 3rem;
+  margin-top: -63vw;
+  margin-left: 3vw;
   }
 
   .card-body{
@@ -76,7 +76,7 @@ margin-left:-5rem;
     display: block;
     margin: auto;
     border-radius: 25px;
-    margin-top: 2rem;
+    margin-top: 2vw;
     padding: 10px 40px;
     font-size: 15px;
     font-weight: bold;
@@ -88,12 +88,12 @@ margin-left:-5rem;
   .card-body{
   border-color: #532CFB;
   border-radius:1%;
-  padding: 1rem .5rem;
+  padding: 1vw .5vw;
   }
 
-  .btn{
-    padding: 1rem 1rem;
-    margin-bottom: 0rem;
+  .butn{
+    padding: 1vw 1vw;
+    margin-bottom: 0vw;
   }
   .imgT{
 display: none;
@@ -115,19 +115,21 @@ display: none;
   }
 
   .card{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
   .card-body{
   border-color: #532CFB;
   border-radius: 1%;
-  margin-top: 1rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-bottom: 1rem;
-  padding: 0;
+  margin-top: 1vw;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-bottom: 1vw;
+  padding: 1vw;
   }
-
+.butn{
+  padding: 2vw;
+}
   }
 
 
@@ -146,17 +148,18 @@ display: none;
   .card-body{
   border-color: #532CFB;
   border-radius: 1%;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1vw;
   }
   .card-subtitle{
   text-align: center;
   color: #4B2157;
-  padding: 0rem;
+  padding: 0vw;
   }
-  .btn{
-    margin-bottom: 1rem;
+  .butn{
+    margin-bottom: 1vw;
+    padding: 1vw;
   }
 }

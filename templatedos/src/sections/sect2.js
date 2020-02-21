@@ -27,8 +27,7 @@ export default class Sect3 extends Component{
       <h2>
         Titulo
       </h2>
-        Cat ipsum dolor sit amet
-        purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box. Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire. Sit in box jump off balcony, onto stranger's head
+         Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire. Sit in box jump off balcony, onto stranger's head
 
         </Col>
     </Row>
@@ -78,7 +77,7 @@ export default class Sect3 extends Component{
       <h2>
         Titulo
       </h2>
-          Cat ipsum dolor sit amet, purrr purr littel cat, little cat purr purr give me attention or face the wrath of my claws, refuse to leave cardboard box. Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire.
+           Cat is love, cat is life meow for food, then when human fills food dish, take a few bites of food and continue meowing for licks your face. Cereal boxes make for five star accommodation lick butt, so meow loudly just to annoy owners good now the other hand, too for meow meowing chowing and wowing sit by the fire.
         </Col>
     </Row>
   </Col>

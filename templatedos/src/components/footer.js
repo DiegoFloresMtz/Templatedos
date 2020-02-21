@@ -3,8 +3,8 @@ import React from 'react';
 import {Container,Row,Col,Nav,NavItem,NavLink} from 'reactstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-import logo from '../../images/logo/logo.svg';
-import '../../style/footer.css';
+import logo from '../images/logo/logo.svg';
+import '../style/footer.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Footer=(props)=>{

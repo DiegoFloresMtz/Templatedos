@@ -3,7 +3,7 @@
 /*}*/
 .bodie{
   background-color: white;
-  margin-top: 1rem;
+  margin-top: 1vw;
 }
 
 .imgaiL{
@@ -23,57 +23,23 @@
 }
 
 .textformR{
-  margin-top: 1rem;
+  margin-top: 0vw;
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.5vw;
   width: 40%;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 
 .textformL{
-  margin-top: 1rem;
+  margin-top: 0vw;
   left:50%;
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.5vw;
   width: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 1vw;
 }
 
-@media (max-width:780px) and (min-width:320px){
-  h2{
-    font-size: 1rem;
-    margin-top:-1rem;
-    margin-bottom:0.4rem;
-  }
-
-
-    .textformR{
-      top:0%;
-      position: absolute;
-      font-size: .5rem;
-      width:50%;
-    }
-
-    .textformL{
-      top:0%;
-      left:50%;
-      position: absolute;
-      font-size: .5rem;
-      width:50%;
-    }
-
-    .imgaiL{
-        position:relative;
-        width:40%;
-        right: 0%;
-    }
-
-    .imgaiR{
-        position: relative;
-        width:40%;
-        left:55%;
-
-    }
-
-
+h2{
+  font-size: 5vw;
+  margin-bottom: 0vw;
 }
